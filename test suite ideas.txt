@@ -1,0 +1,54 @@
+Test Suite Based on Bare Bones:
+- Verify Correct Page Title
+- Verify Game ID populates
+- Verify Players are present
+- Verify Player Hands populates
+- Verify Each Player has 5 Dice
+- Verify Each Die Value is greater than 0 and less than 7
+- Verify That Actions are present
+- Verify that Player 0 is the first to perform an action
+- Verify that Action/Turn has a unique ID
+- Verify that Claim.Value cannot be 0
+- Verify that Face.Value is greater than 0 and less than 7
+- Verify Claim.Value and Face.Value are captured
+- Verify if Player 0 Bid is a Lie (All hands into an array, then count the amount of times Face.Value occurs. If the count is higher than the Claim.Value, then not a lie.)
+- Verify that Player 1 is the first action
+- Verify that Action/Turn has a unique ID
+- Verify that Claim.Value must be greather than or equal to Player 0 Claim.Value
+- Verify that If Claim.Value equals Player 0 Claim.Value, then Player 1 Face.Value must be greater than Player 0 Face.Value
+- Verify that if Claim.Value is greater than Player 0 Claim.Value, then Player 1 Face. Value must be greater than 0 but less than 7.
+- Verify that Face.Value cannot be 0 or greater than 6
+- Verify Claim.Value and Face.Value are captured/unique ID
+- Verify if Player 1 Bid is a Lie (All hands into an array, then count the amount of times Face.Value occurs. If the count is higher than the Claim.Value, then not a lie.)
+
+Hypothetical (if UI present):
+- Verify CSS is present
+- Verify Start Game button is present
+- Verify clicking button takes to game settings screen
+- Verify Set Player Count is present and can be adjusted
+- Verify Set Die Count is present and can be adjusted
+- Verify Start Game button is present
+- Verify Clicking Start Game initiates game
+- Verify Correct Amount of Players appear based on settings
+- Verify Correct Amount of Dice appear based on settings
+- Verify Dice Values appear Random
+- Verify it is not possible for Player 0 to challenge the bid
+- Verify Player 0 must enter in a bid
+- Verify Claim Value and Face Value can be adjusted
+- Verify Face Value can only be between 1-6
+- Verify Bid can be submited
+- Verify following Players challenge previous bids
+- Verify following Players must enter a bid unless they challenge the previous bid
+- Verify the bid Claim.Value must be greater than or equal to the Previous Claim.Value
+- Verify that if the Claim.Value is equal to the previous Claim.Value, the Face.Value must be greater than the Previous Face.Value.
+- Verify that if the Claim.Value is greater than the previous Claim.Value, the Face.Value must be greater than 1 and less than 7.
+- Verify that if a Challenge is performed the previous Claim.Value and Face.Value is used.
+- Verify that if the count of the Face.Value in all hands is less than the Claim.Value, then previous is a liar.
+- Verify that if the count of the Face.Value in all hands is more the Claim.Value, then previous Player is not a liar.
+- Verify that if previous Player is a liar, they lose
+- Verify that if previous Player is not a liar, Challenger loses.
+- Verify that loser is removed from the game
+- Verify that Dice are re-rolled
+- Verify that Turn continues after the previous Player.
+- Verify that on the last player the next turn starts over on Player 0.
+- Verify game continues until only 1 player remains.
